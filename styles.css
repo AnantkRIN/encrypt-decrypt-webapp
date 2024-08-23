@@ -1,0 +1,163 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main container styling */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Textarea and input styling */
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Input focus styling */
+textarea:focus, input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    margin: 5px 0;
+    width: calc(50% - 10px);
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Flexbox for buttons */
+.form-group .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Output textarea styling */
+textarea[readonly] {
+    background-color: #e9ecef;
+    color: #333;
+    cursor: not-allowed;
+    resize: none;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #181818;
+    color: #f0f0f0;
+}
+
+.container.dark-mode {
+    background-color: #242424;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1.dark-mode {
+    color: #1e90ff;
+}
+
+label.dark-mode {
+    color: #bbb;
+}
+
+textarea.dark-mode, input.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #444;
+}
+
+textarea.dark-mode[readonly] {
+    background-color: #333;
+    color: #bbb;
+}
+
+button.dark-mode {
+    background-color: #1e90ff;
+}
+
+button.dark-mode:hover {
+    background-color: #1c86ee;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+    
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .form-group .buttons {
+        flex-direction: column;
+    }
+}
+
